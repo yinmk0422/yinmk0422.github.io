@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("base.css");
+.infos{ margin:0 auto;}
+.infos .inner{ background:#fff;}
+.infos .title{ padding:10px; height:21px; border-width:1px 1px 0; border-style:solid; border-color:#d3d3d3; background:transparent url(/Index/Public/images/bg-banner2.gif) repeat;}
+.infos .title dl{ float:left; width:978px; height:21px; overflow:hidden;}
+.infos .title dt{ float:left;}
+.infos .title dt h2{ font-size:18px;}
+.infos .title dd{}
+.infos .title dd.left{ float:left; height:14px; padding-top:7px; padding-left:20px;}
+.infos .title dd.left a{ color:#999;}
+.infos .title dd.left label{ font-weight:bold; color:#f60;}
+.infos .title dd.left input{ vertical-align:middle; margin-top:-3px;}
+.infos .title dd.right{ float:right;}
+.infos .title dd.right2{ float:right;height:14px;padding-top:7px;}
+.infos .title dd.right2 a{ font-weight:bold; color:#00f;}
+.infos .title dd.right2 a:hover{ color:#F66;}
+.infos .title dd.right .sokey{background:#FFFFFF; width:160px; line-height:19px; height:19px; border:1px solid #FF6600; vertical-align:middle; color: #999999; padding-left:3px}
+.infos .title dd.right .sonav{ background:#FF6600; color:#FFFFFF; height:21px;vertical-align:middle; padding:0 8px; cursor:pointer}
+.infos .bd{ overflow:hidden;}
+.infos table{ width:100%; text-align:center; font-weight:bold;}
+.infos table th,
+.infos table td{ border:1px solid #d3d3d3; font-family:Arial; cursor:default;}
+.infos table th{ width:30px; height:39px; background:#efefef; line-height:39px;}
+.infos table td{ padding:5px 0; vertical-align:middle;}
+.infos table td.no{ font-weight:normal;}
+.infos table .min{ width:47px;}
+.infos table .mid{ width:80px;}
+.infos table .max{ width:186px;}
+.infos table .mini{ width:36px;}
+.infos table .mar{ width:70px;}
+.infos table .bg-high1{ background:#ff9;}
+.infos table .bg-high2{ background:#ffc;}
+.infos table .sortSize{ display:none;}
+.infos table .sortDown,
+.infos table .sortSize{ padding:0 3px;}
+.infos table .p{ border:1px solid #e3e3e3;}
+.infos table .bg-high2 .p{ float:none; margin:0 5px; }
+.infos table .hm{ padding:0.3vw 0; font-family:Tahoma; font-size:4vw;height:5vw}
+.infos table .sx{font-size:4vw;font-weight: bold;height:5vw;padding:1px 0; background:#fff; color:#666; text-align: center; margin: 0 auto; }
+.infos table .danClass{ color:#f0f;}
+.infos table .shuangClass{ color:#004080;}
+.infos table .daClass{ color:#f0f;}
+.infos table .xiaoClass{ color:#004080;}
+.infos table .redBoClass{ background:#f00; color:#fff;}
+.infos table .blueBoClass{ background:#00f; color:#fff;}
+.infos table .greenBoClass{ background:#008000; color:#fff;}
+.infos table .infos table .redClass{ color:#f00;}
+.infos table .infos table .blueClass{ color:#00f;}
+.infos table .redClass{ color:#f00;}
+.infos table .blueClass{ color:#00f;}
+.infos table .greenClass{ color:#008000;}
+.infos table .wuxingjinClass{ color:#f39700;}
+.infos table .wuxingmuClass{ color:#008000;}
+.infos table .wuxingshuiClass{ color:#999;}
+.infos table .wuxinghuoClass{ color:#f00;}
+.infos table .wuxingtuClass{ color:#6a3905;}
+.infos table .tou0Class{ color:#f39700;}
+.infos table .tou1Class{ color:#008000;}
+.infos table .tou2Class{ color:#999;}
+.infos table .tou3Class{ color:#f00;}
+.infos table .tou4Class{ color:#6a3905;}
+.infos table .menshu1Class{ color:#008000;}
+.infos table .menshu2Class{ color:#999;}
+.infos table .menshu3Class{ color:#009e96;}
+.infos table .menshu4Class{ color:#7d0022;}
+.infos table .menshu5Class{ color:#f39700;}
+.infos table .jiaClass{ color:#09f;}
+.infos table .yeClass{ color:#906;}
+.infos table .weishu0Class{ color:#999;}
+.infos table .weishu1Class{ color:#6a3905;}
+.infos table .weishu2Class{ color:#009e96;}
+.infos table .weishu3Class{ color:#f39700;}
+.infos table .yinClass{ color:#999;}
+.infos table .yangClass{ color:#333;}
+.infos table .tianClass{ color:#00469d;}
+.infos table .diClass{ color:#7d0022;}
+.infos table .jiClass{ color:#e60011;}
+.infos table .xiongClass{ color:#009e96;}
+.infos table .heiClass{ color:#000;}
+.infos table .baiClass{ color:#999;}
+.infos table .redSeXiaoClass{ color:#f00;}
+.infos table .blueSeXiaoClass{ color:#00f;}
+.infos table .greenSeXiaoClass{ color:#008000;}
+.infos table .danBiClass{ color:#f0f;}
+.infos table .shuangBiClass{ color:#00469d;}
+.infos table .duanwei1Class{ color:#999;}
+.infos table .duanwei2Class{ color:#009e96;}
+.infos table .duanwei3Class{ color:#f39700;}
+.infos table .duanwei4Class{ color:#00469d;}
+.infos table .duanwei5Class{ color:#920683;}
+.infos table .duanwei6Class{ color:#009944;}
+.infos table .duanwei7Class{ color:#6a3905;}
+.infos table .nanClass{ color:#06f;}
+.infos table .nvClass{ color:#f0f;}
+.infos .bottom{ padding:10px 3px 5px; font-size:4vw;}
+.infos .bottom li{ float:left; width:108px; text-align:center;}
+.infos .bottom li a{ color:#f60;}
+.infos .bottom li a:hover{ color:#F66;}
+
+.shengxiaocolor{
+  background-color: #fff;
+  color:#000;
+  width:8vw; 
+  text-align: center; 
+  margin: 0 auto;
+}
+.bottom{height:41px;padding:0 6px;background:#a4e0d8;line-height:41px;color:#f60}
+.bottom ul{width:100%;overflow:hidden}
+.bottom li a{color:#090}
+.bottom li a:hover{color:#f00}
+.msg .line{padding:10px 0;font-size:14px}
+.msg .line a{color:#ff0}
+.clipinner{position:relative}
+.clipboardswf{position:absolute;left:0;top:0}
+.STYLE3 {font-size: 16px}
+.p-container{
+  float: left;
+  width: 10%;
+  margin:0 1px;
+
+}
+.shadow{width:30px;height:18px;border-top:1px solid #fff; background:transparent url(images/XXXY.gif) repeat-x;}
+.wait_text{
+  font-size: 12px;
+}

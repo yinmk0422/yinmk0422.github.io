@@ -1,0 +1,201 @@
+
+<!-- saved from url=(0063)http://amxy.gaodada.net/index.php/index/liuhe/block/act/kj.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<link href="./ms_phone49.css" rel="stylesheet" type="text/css">
+<title>无广告插件开奖</title>
+<script src="./jquery.min.js"></script>
+<script src="./d.js"></script>
+
+<script language="javascript">
+window.setTimeout("location.reload();",10000);
+</script>
+
+<style>
+
+html{font-size:14px}
+*{ margin:0px; padding:0px; }
+body, td { font:13px "宋体" Arial, Verdana; }
+body { background:#FFF; padding:0px; margin:0px; text-align: center; }
+img { margin:0px; padding:0px; }
+
+.maintab { width: 100%; border:1px;  text-align: }
+.maintab td { text-align:center; color:red; padding:2px 2px; }
+.maintab .main { color:black; font-size:25px; font-weight:bold; text-align: center;}
+.te{
+	width:100%;
+	height:10.8vw;
+}
+
+.blue { color:blue; }
+
+</style>
+
+</head>
+
+<body marginwidth="1" marginheight="0" style="">
+<table cellspacing="3" cellpadding="0" width="100%" border="1">
+  
+  <tbody><tr>
+    <td class="main">
+      <div class="infos" id="showinfos">
+        <table>
+                       <tbody><tr>
+            <td width="100%">   
+            <div class="sortDown clearfix">
+				<div style="width: 14%;float: left; font-size:2vw">
+				
+	   
+					<div><span id="qishu">61</span>期</div>
+					<div><font color="#009900">[<span id="wait_text">六合彩</span><span id="aa"></span>]</font>
+						</div>
+					<div id="divdown1" style="background:#FFFFFF;color:blue;padding-right:2px;height:25px;line-height:25px">
+					    <div class="time-item" id="xdjs">
+					    <span class="hour">公平</span>
+					    <span class="minute">公正</span>
+					    <span class="second">公开</span>
+						</div>
+				</div>
+
+            </div>
+            <div id="jingtaihtml">
+            <div class="p-container">
+              <div class="p" id="nowball0"><div class="hm redBoClass">18</div><div class="sx redBoClass"><div class="shengxiaocolor">羊</div></div></div>
+             
+            </div>
+            <div class="p-container">
+              <div class="p" id="nowball1"><div class="hm greenBoClass">39</div><div class="sx greenBoClass"><div class="shengxiaocolor">狗</div></div></div>
+          
+            </div>
+            <div class="p-container">
+              <div class="p" id="nowball2"><div class="hm redBoClass">35</div><div class="sx redBoClass"><div class="shengxiaocolor">虎</div></div></div>
+          
+            </div>
+            <div class="p-container">
+              <div class="p" id="nowball3"><div class="hm greenBoClass">43</div><div class="sx greenBoClass"><div class="shengxiaocolor">马</div></div></div>
+             
+            </div>
+            <div class="p-container">
+              <div class="p" id="nowball4"><div class="hm blueBoClass">20</div><div class="sx blueBoClass"><div class="shengxiaocolor">蛇</div></div></div>
+           
+            </div>
+            <div class="p-container">
+              <div class="p" id="nowball5"><div class="hm greenBoClass">21</div><div class="sx greenBoClass"><div class="shengxiaocolor">龙</div></div></div>
+              
+            </div>
+            <div class="p-container">
+              <div class="p">
+                  <img src="./te.png" width="100%" class="te">
+                
+              </div>
+              
+            </div>
+            <div class="p-container">
+               <div class="p" id="nowball6"><div class="hm blueBoClass">48</div><div class="sx blueBoClass"><div class="shengxiaocolor">牛</div></div></div> 
+              
+            </div>
+            </div>
+            </div>
+            </td>
+            
+          </tr>
+         
+          
+                </tbody></table>
+      </div>
+  </td>
+  </tr>
+
+  
+</tbody></table>
+<div style="clear:both"></div>
+<div class="bottom"><ul><li class="fleft"><strong>第<span id="nextqishu">61</span>期开奖时间：2020年<span id="nexttime">05月20日 21:31:00 星期三</span></strong></li></ul></div>
+<script>
+  var last = 0; //显示计数
+  var showit = 0;
+  var data; //获取的数据
+  var ballArray = [];
+  var step = 0;
+  var start = 0;
+  var startDjs = 0;
+  init();
+  function init(){
+    getBall();
+  }
+  function getBall(){
+    $(function(){
+      $.ajax({
+        url: '/index/liuhe/ajax_get.html?'+ 50,
+        data: '',
+        success: function(res){
+          showriqi(res.other);
+          if(res.start == 0){
+            //alert(res.data);
+            var others = res.other;
+            showhtml(res.data);
+            if(startDjs == 0){
+              countDown(others.nexttime, others.servertime, "#djs");
+              startDjs = 1;
+            }
+
+          }else{
+            showkaijiangHtml();
+            showhtml(res.data);
+          }
+        },
+        dataType: 'JSON'
+      });
+    })
+  }
+
+function showriqi(data){
+    $("#qishu").html(data.qishu);
+    $("#nextqishu").html(data.nextqishu);
+    $("#nexttime").html(data.riqi);
+}
+
+//定时显示函数
+/*function timedCount() {
+  var strHtml = '<div class="hm '+ ballArray[last][0]+'">'+ ballArray[last][1] +'</div><div class="sx '+ ballArray[last][0]+'"><div  class="shengxiaocolor">'+ ballArray[last][2]+'</div></div>';
+  $("#nowball"+last).html(strHtml);
+  
+  last++;
+  if(last == ballArray.length){
+    last = 0;
+    showit = 0;
+    data=''; //获取的数据
+    ballArray = [];
+    //init();
+  }else{
+    setTimeout("timedCount()",1000);
+  }
+  
+}*/
+
+function showhtml(data){
+    //alert(data);
+     $.each(data, function(i, item) { //这里的函数参数是键值对的形式，k代表键名，v代表值
+        j = i-1;  
+        if(item.tit == 0 || item.tit == null) {
+
+        }else{
+          html ='<div class="hm '+ item.class+'">'+ item.tit+'</div><div class="sx '+ item.class+'"><div  class="shengxiaocolor">'+ item.tit0+'</div></div>';
+          $('#nowball'+j).html(html);
+        }
+                
+  });
+    
+    setTimeout("init()",2000);
+}
+
+function showkaijiangHtml(){
+  $("#jingtaihtml").html('<div class="p-container"><div class="p"  id="nowball0"><img width="100%" src="/liuhe/block/images/q.gif"></div></div><div class="p-container"><div class="p" id="nowball1"><img width="100%" src="/liuhe/block/images/w.gif"></div></div><div class="p-container"><div class="p" id="nowball2"><img width="100%" src="/liuhe/block/images/e.gif"></div></div><div class="p-container"> <div class="p" id="nowball3"><img width="100%" src="/liuhe/block/images/r.gif"> </div></div><div class="p-container"><div class="p" id="nowball4"><img width="100%" src="/liuhe/block/images/t.gif"></div>  </div><div class="p-container"><div class="p" id="nowball5"> <img width="100%" src="/liuhe/block/images/y.gif"></div></div><div class="p-container"><div class="p"><img src="/liuhe/block/images/te.png" class="te"></div></div><div class="p-container"><div class="p" id="nowball6"><img width="100%" src="/liuhe/block/images/u.gif"></div></div>');
+} 
+</script>
+
+
+
+</body></html>
